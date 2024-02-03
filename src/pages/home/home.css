@@ -1,0 +1,4 @@
+.news .center{
+    display: flex;
+    flex-wrap: wrap;
+}
