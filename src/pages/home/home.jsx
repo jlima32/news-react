@@ -1,6 +1,7 @@
 import "./home.css";
 import Header from "../../components/header/header.jsx";
 import NewsWrapper from "../../components/news-wrapper/news-wrapper.jsx";
+import Footer from "../../components/footer/footer.jsx";
 
 
 export default function Home(){
@@ -17,6 +18,8 @@ export default function Home(){
                 <NewsWrapper />
             </div>
         </section>
+
+        <Footer />
 
     </>
 }
