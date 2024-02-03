@@ -1,5 +1,4 @@
 .news .center{
     display: flex;
     flex-wrap: wrap;
-    min-height: 84.3vh;
 }
