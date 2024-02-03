@@ -1,0 +1,37 @@
+.news-img-sidebar-more-news{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.more-news-img img{
+    height: 80px;
+    width: 80px;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+.more-news-content {
+    font-size: 12px;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    padding: 10px;
+}
+
+.more-news-content-title{
+    text-transform: uppercase;
+    color: #EC732F;
+    font-weight: 600;
+}
+
+.more-news-content-news{
+    margin: 5px 0;
+    color: #000;
+} 
+
+.more-news-content-date{
+    color: #999;
+} 
+
