@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
                 </div>
                 <div className="single-news-content">
                     <div className="news-cat-dt">
-                        <p className={`news-category ${categoria.toLowerCase()}`}><Link to="/News">{categoria}</Link></p>
+                        <p className={`news-category ${categoria.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")}`}><Link to="/News">{categoria}</Link></p>
                         <p className="news-date">{data.slice(0,10)}</p>
                     </div>
                     <h2><Link to="/News">{titulo}</Link></h2>
