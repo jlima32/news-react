@@ -1,11 +1,12 @@
 import "./header.css"
+import { Link } from "react-router-dom";
 
 export default function Header(){
     return <>
         <header>
             <div className="center">
                 <div className="logo">
-                    123 <span>News</span>
+                    <Link to="/">123 <span>News</span></Link>
                 </div>
                 <div className="search">
                     <form className="searchbar">
