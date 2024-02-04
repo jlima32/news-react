@@ -32,6 +32,7 @@ export default function Home(){
                 news.map((item) => 
                     <NewsWrapper
                         key={item.id} 
+                        id={item.id} 
                         img={item.img} 
                         categoria={item.categoria} 
                         data={item.data} 

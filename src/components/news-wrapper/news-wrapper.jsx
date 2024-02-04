@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
                         <p className={`news-category ${categoria.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")}`}><Link to="/News">{categoria}</Link></p>
                         <p className="news-date">{data.slice(0,10)}</p>
                     </div>
-                    <h2><Link to="/News">{titulo}</Link></h2>
+                    <h2><Link to={`/News/${id}`}>{titulo}</Link></h2>
                     <p>{noticia.slice(0,175)} ...</p>
                 </div>
             </div>

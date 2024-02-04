@@ -6,7 +6,7 @@ export default function Rotas(){
     return <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/news" element={<News />} />
+            <Route path="/news/:id" element={<News />} />
         </Routes>
     </BrowserRouter>
 }
