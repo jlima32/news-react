@@ -14,7 +14,7 @@ export default function Home(){
     useEffect(() =>{
         setTimeout(
             () => {
-                fetch(`https://65bf85cb25a83926ab952277.mockapi.io/news/noticias`)
+                fetch(`https://65bf85cb25a83926ab952277.mockapi.io/news/noticias/?orderby=data&order=desc`)
                 .then((resp) => resp.json())
                 .then((data) => {
                     setNews(data);
