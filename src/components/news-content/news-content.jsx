@@ -18,10 +18,10 @@ export default function NewsContent(){
                         <p>02/02/2024 - 17h00</p>
                     </div>
                     <div className="news-dt-social-icons">
-                        <i class="fa-brands fa-facebook face"></i>
-                        <i class="fa-brands fa-twitter twitter"></i>
-                        <i class="fa-brands fa-whatsapp whats"></i>
-                        <i class="fa-brands fa-linkedin linkedin"></i>
+                        <i className="fa-brands fa-facebook face"></i>
+                        <i className="fa-brands fa-twitter twitter"></i>
+                        <i className="fa-brands fa-whatsapp whats"></i>
+                        <i className="fa-brands fa-linkedin linkedin"></i>
                     </div>
                 </div>
 

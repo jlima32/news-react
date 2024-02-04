@@ -1,5 +1,6 @@
 import "./news-sidebar.css";
 import foto from "../../assets/noticia1.webp";
+import { Link } from "react-router-dom";
 
 export default function NewsSidebar(){
     return<>
@@ -9,9 +10,9 @@ export default function NewsSidebar(){
                 <img src={foto} alt="Foto Mais Notícias" />
             </div>
             <div className="more-news-content">
-                <p class="more-news-content-title">carros</p>
-                <p class="more-news-content-news"><a href="#">Fim da torcida única? Saiba o motivo ...</a></p>
-                <p class="more-news-content-date">01/02/2024</p>
+                <p className="more-news-content-title">carros</p>
+                <p className="more-news-content-news"><Link to="/News">Fim da torcida única? Saiba o motivo ...</Link></p>
+                <p className="more-news-content-date">01/02/2024</p>
             </div>
         </div>
     </>
