@@ -32,6 +32,9 @@ section.news{
 .esporte {
     background-color: #EC732F;
 }
+.economia {
+    background-color: #CC0000;
+}
 
 .saude {
     background-color: #3EB283;
@@ -41,8 +44,16 @@ section.news{
     background-color: #52607A;
 }
 
+.tecnologia {
+    background-color: #197bed;
+}
+
 .esporteTxt {
     color: #EC732F;
+}
+
+.economiaTxt {
+    color: #CC0000;
 }
 
 .saudeTxt {
@@ -51,4 +62,9 @@ section.news{
 
 .carrosTxt {
     color: #52607A;
+}
+
+
+.tecnologiaTxt {
+    color: #197bed;
 }
