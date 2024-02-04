@@ -1,8 +1,21 @@
 import "./news-content.css";
 import NewsSidebar from "../news-sidebar/news-sidebar.jsx";
+import { useState,useEffect } from "react";
 
 
 export default function NewsContent({titulo, subtitulo, data, img, creditoImg, noticia}){
+
+    const [news,setNews] = useState([]);
+
+    useEffect(() => {
+        fetch(`https://65bf85cb25a83926ab952277.mockapi.io/news/noticias/?page=1&limit=5`)
+            .then((resp) => resp.json())
+            .then((data) => {
+                setNews(data);
+            })
+            .catch((err) => console.lot(err));
+    }, [])
+
     return <>
         <div className="news-content">
                 <h1>
@@ -31,11 +44,17 @@ export default function NewsContent({titulo, subtitulo, data, img, creditoImg, n
                     </div>
                     <div className="news-img-sidebar-sidebar">
                         <h3>Veja Também</h3>
-                        <NewsSidebar />
-                        <NewsSidebar />
-                        <NewsSidebar />
-                        <NewsSidebar />
-                        <NewsSidebar />
+                        {news.map((item) => 
+                            <NewsSidebar 
+                                key={item.id}
+                                id={item.id}
+                                img={item.img}
+                                categoria={item.categoria}
+                                titulo={item.titulo}
+                                data={item.data}
+                            />
+                        )}
+                            
                     </div>
                 </div>
 

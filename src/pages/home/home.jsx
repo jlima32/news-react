@@ -14,12 +14,12 @@ export default function Home(){
     useEffect(() =>{
         setTimeout(
             () => {
-                fetch('https://65bf85cb25a83926ab952277.mockapi.io/news/noticias')
-            .then((resp) => resp.json())
-            .then((data) => {
-                setNews(data);
-                setRemoveLoading(true)
-            })
+                fetch(`https://65bf85cb25a83926ab952277.mockapi.io/news/noticias`)
+                .then((resp) => resp.json())
+                .then((data) => {
+                    setNews(data);
+                    setRemoveLoading(true)
+                })
             .catch((err) => console.log(err))
             }, 200)
     }, [])    
