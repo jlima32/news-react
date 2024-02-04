@@ -17,7 +17,7 @@
     font-size: 12px;
     width: 100%;
     border-bottom: 1px solid #DDD;
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
 .more-news-content-title{
@@ -35,3 +35,9 @@
     color: #999;
 } 
 
+
+@media screen and (max-width: 800px) {
+    .news-img-sidebar-sidebar{
+        display: none;
+    }
+  }

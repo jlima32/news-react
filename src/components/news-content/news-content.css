@@ -1,0 +1,96 @@
+.news-content h1{
+    font-size: 36px;
+    line-height: 1.15;
+}
+
+.news-content h2{
+    margin: 14px 0;
+    text-align: justify;
+    line-height: 1.5;
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.news-dt-social{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-dt-social-date p{
+    font-size: 14px;
+    color: #777;
+    font-weight: 500;
+}
+
+.news-dt-social-icons{
+    padding-top: 2px;
+    display: flex;
+}
+
+.news-dt-social-icons i{
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+
+.news-dt-social-icons .face{
+    color: #197BED;
+}
+
+.news-dt-social-icons .twitter{
+    color: #219DEC;
+}
+
+.news-dt-social-icons .whats{
+    color: #35B04A;
+}
+
+.news-dt-social-icons .linkedin{
+    color: #197BED;
+    padding-right: 0;
+}
+
+.news-img-sidebar{
+    margin-top: 10px;
+    display: flex;
+}
+
+.news-img-sidebar-img {
+    margin-top: 3px;
+    flex: 1;
+    height: 560px;
+}
+
+.news-img-sidebar-img img{
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+}
+
+.news-img-sidebar-img-credit{
+    color: #AAA;
+    font-size: 12px;
+}
+
+.news-img-sidebar-sidebar{
+    margin-left: 20px;
+    width: 30%;
+}
+
+.news-img-sidebar h3{
+    color: #999;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.news-content .news-text{
+    padding-top: 30px;
+    text-align: justify;
+    color: #333;
+    line-height: 1.8;
+}
+
+.news-content .news-text p{
+    margin: 1em 0;
+}
