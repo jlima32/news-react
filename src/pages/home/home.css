@@ -2,3 +2,17 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.btn.more-news{
+    width: 100%;
+    margin: 0 2%;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    background-color: #9DB2BF;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+}

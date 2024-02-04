@@ -9,6 +9,15 @@ import { useState, useEffect } from "react";
 export default function Home(){
 
     const [news, setNews] = useState([]);
+    const [qtNews, setqtNews] = useState(6);
+    const loadMore = () => {
+        setqtNews(qtNews + 3);
+    }
+
+    const slice = news.slice(0, qtNews);
+
+    console.log(slice);
+
     const [removeLoading, setRemoveLoading] = useState(false);
     
     useEffect(() =>{
@@ -29,7 +38,7 @@ export default function Home(){
         <section className="news">
             <div className="center">
             {news.length > 0 &&
-                news.map((item) => 
+                slice.map((item, index) => 
                     <NewsWrapper
                         key={item.id} 
                         id={item.id} 
@@ -42,6 +51,10 @@ export default function Home(){
                 )}
                 {!removeLoading && <Loader />}
             </div>
+            <div className="center" onClick={() => loadMore()}>
+                <button className="btn more-news">Carregar Mais</button>
+            </div>
+
         </section>
 
         <Footer />
