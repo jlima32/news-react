@@ -36,18 +36,3 @@ header .logo span{
 }
 
 
-#searchInput{
-    padding: 6px 10px;
-    width: 200px;
-    height: 30px;
-    border-radius: 6px;
-    border: none;
-    outline: none;
-    font-size: 12px;
-    color: #56667E;
-}
-
-#searchInput::placeholder{
-    color: #56667E;
-    opacity: 0.5;
-}

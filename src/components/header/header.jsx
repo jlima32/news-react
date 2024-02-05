@@ -1,3 +1,4 @@
+import SearchBar from "../search-bar/search-bar.jsx";
 import "./header.css"
 import { Link } from "react-router-dom";
 
@@ -8,11 +9,7 @@ export default function Header(){
                 <div className="logo">
                     <Link to="/">123 <span>News</span></Link>
                 </div>
-                <div className="search">
-                    <form className="searchbar">
-                        <input type="text" id="searchInput" name="searchInput" placeholder="Digite o que procura..." />
-                    </form>
-                </div>
+                <SearchBar />
             </div>
         </header>
     </>
