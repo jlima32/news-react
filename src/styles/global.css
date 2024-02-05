@@ -17,7 +17,7 @@
     text-decoration: underline;
 }
 
-.center, .news-content{
+.center, .news-content, .search-content{
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 2%;
@@ -67,4 +67,10 @@ section.news{
 
 .tecnologiaTxt {
     color: #197bed;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
