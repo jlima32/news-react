@@ -2,7 +2,7 @@
 <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
 <img src="https://uploaddeimagens.com.br/images/004/731/971/full/imagem.png?1707144029" alt="jlima32" />
 
->Este é um site de notícias desenvolvido com React. Oferecendo aos usuários uma interface limpa e interativa.
+>Este é um site de notícias dinâmico desenvolvido com React. Oferecendo aos usuários uma interface limpa e interativa.
 >
 >Teste Aqui: [https://news-react-one.vercel.app](https://news-react-one.vercel.app)
 
