@@ -28,7 +28,7 @@ export default function Home(){
                     setRemoveLoading(true)
                 })
             .catch((err) => console.log(err))
-            }, 200)
+            }, 100)
     }, [])    
 
     return <>

@@ -13,7 +13,7 @@ export default function NewsContent({titulo, subtitulo, data, img, creditoImg, n
             .then((data) => {
                 setNews(data);
             })
-            .catch((err) => console.lot(err));
+            .catch((err) => console.log(err));
     }, [])
 
     return <>
