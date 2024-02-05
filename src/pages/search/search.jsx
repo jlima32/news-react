@@ -22,7 +22,7 @@ export default function Search(){
 
         setTimeout(
             () => {
-                fetch(`https://65bf85cb25a83926ab952277.mockapi.io/news/noticias/?search=${text}`)
+                fetch(`https://65bf85cb25a83926ab952277.mockapi.io/news/noticias/?search=${text}&orderby=data&order=desc`)
                     .then((resp) => resp.json())
                     .then((data) => {
                             if(data === 'Not found'){
