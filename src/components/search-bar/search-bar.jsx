@@ -14,14 +14,20 @@ export default function SearchBar(){
         navigate(`/Search/${valor}`);
     }
 
+    function handleKeyPress(e){
+        if(e.key === 'Enter'){
+            navigate(`/Search/${valor}`);
+        }
+    }
+
     return <>
         <div className="search">
-            <form className="searchbar">
-                <input type="text" id="searchInput" name="searchInput" onChange={handleChange} placeholder="Digite o que procura..." />
+            <div className="searchbar">
+                <input type="text" id="searchInput" name="searchInput" onChange={handleChange} onKeyDown={e => handleKeyPress(e)} placeholder="Digite o que procura..." />
                 <button className="searchButton" onClick={search}>
                     <i className="fas fa-search"></i>
                 </button>
-            </form>
+            </div>
         </div>
     </>
 }
